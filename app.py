@@ -37,7 +37,7 @@ with st.sidebar:
         available_models = list_local_models()
     elif ollama_status == "not_installed":
         ollama_ok = False
-        st.error("❌ Ollama isn't installed (or not on PATH). Install it from https://ollama.com/download")
+        st.error(" Ollama isn't installed (or not on PATH). Install it from https://ollama.com/download")
         available_models = []
     else:  # timeout
         ollama_ok = False
@@ -57,7 +57,7 @@ with st.sidebar:
     st.divider()
     uploaded_file = st.file_uploader("📁 Upload a CSV or Excel file", type=["csv", "xlsx", "xls"])
 
-st.title("📊 AI Business Data Analyst")
+st.title(" AI Data Analyst")
 st.caption("Upload your company's data file and get inspection, visualizations, statistical analysis, and smart business insights — all running locally, with no data sent to any external server.")
 
 if uploaded_file is None:
