@@ -3,19 +3,19 @@
 import streamlit as st
 import pandas as pd
 
-from modules.data_loader import load_file, inspect_data
-from modules.summary import dataset_summary, build_text_profile
-from modules.visualizations import (
+from data_loader import load_file, inspect_data
+from summary import dataset_summary, build_text_profile
+from visualizations import (
     numeric_histograms, categorical_bar_charts, correlation_heatmap, boxplots_for_outliers
 )
-from modules.statistics_analysis import detect_outliers_iqr, top_correlations, normality_check
-from modules.forecasting import (
+from statistics_analysis import detect_outliers_iqr, top_correlations, normality_check
+from forecasting import (
     FREQ_MAP, build_time_series, analyze_trend, forecast_series, trend_and_forecast_chart,
     rank_based_trend, HAS_STATSMODELS
 )
-from modules.llm_client import ensure_ollama_running, list_local_models
-from modules.insights import generate_business_insights, generate_recommendations
-from modules.chatbot import answer_question
+from llm_client import ensure_ollama_running, list_local_models
+from insights import generate_business_insights, generate_recommendations
+from chatbot import answer_question
 
 st.set_page_config(page_title="AI Data Analyst", layout="wide")
 
