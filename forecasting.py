@@ -1,13 +1,3 @@
-"""
-forecasting.py
-Handles "Trend Analysis" and "Forecasting / Predictive Analytics":
-- Detects the general trend (upward / downward / stable) for any numeric column.
-- Moving averages to smooth out fluctuations.
-- Forecasts future values using Holt's Exponential Smoothing (with a fallback to a
-  simple linear regression when the data is too short or there's no date column).
-
-No external API required - everything runs locally via statsmodels/numpy.
-"""
 
 import numpy as np
 import pandas as pd
