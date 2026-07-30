@@ -1,11 +1,6 @@
-"""
-insights.py
-Generates "AI Business Insights" and "AI Recommendations" using the local model,
-based on the statistical profile of the data (not the raw data) to save tokens
-and preserve privacy.
-"""
 
-from modules.llm_client import ask_ollama
+
+from llm_client import ask_ollama
 
 INSIGHTS_SYSTEM_PROMPT = """
 You are an expert Business Data Analyst. You will receive a statistical summary of a company's dataset.
