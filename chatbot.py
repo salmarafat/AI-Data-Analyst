@@ -1,11 +1,4 @@
-"""
-chatbot.py
-Handles the "AI Data Analyst Chatbot":
-  1) The user asks a question (English or Arabic) about the data.
-  2) The local model (via Ollama) converts the question into pandas code.
-  3) Python actually executes the code on the data.
-  4) The model explains the result in plain language.
-"""
+
 
 import re
 import io
@@ -14,7 +7,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-from modules.llm_client import ask_ollama
+from llm_client import ask_ollama
 
 CODE_SYSTEM_PROMPT = """
 You are an expert Python data analyst. You have a DataFrame called df with the columns and types given below.
