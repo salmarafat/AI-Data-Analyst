@@ -1,13 +1,4 @@
-"""
-llm_client.py
 
-Handles communication with the local LLM via Ollama.
-
-Requirements:
-- Install Ollama.
-- Pull a model:
-    ollama pull phi3
-"""
 
 import subprocess
 import shutil
