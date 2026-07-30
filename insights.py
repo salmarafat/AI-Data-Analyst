@@ -1,5 +1,3 @@
-
-
 from llm_client import ask_ollama
 
 INSIGHTS_SYSTEM_PROMPT = """
